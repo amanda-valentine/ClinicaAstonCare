@@ -1,0 +1,179 @@
+<!--
+Este archivo HTML contiene :
+
+1. **Header (Encabezado)**:
+   - Contiene el logo de la clínica y el menú de navegación.
+   - En dispositivos móviles, el menú se presenta como un "menú hamburguesa" que se puede desplegar.
+
+2. **Main (Contenido principal)**:
+   - Sección Medicina: Muestra diversos servicios de medicina estetica acompañados de una descripción e imagen.
+   
+
+3. **Footer (Pie de página)**:
+   - Contiene información de contacto (dirección, horarios, teléfono).
+   - Incluye enlaces rápidos como "Hacer una cita" y "Ver bonos".
+
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Aston Care Medicina estética</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <!-- Header: Contenedor de la barra de navegación -->
+    <header>
+        <!-- Botón hamburguesa para menú móvil -->
+        <button class="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Menú de navegación -->
+        <nav id="menu">
+            <div class="container_logo">
+                <!-- Enlace a la página principal -->
+                <a href="index.html">
+                    <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_claro" class="logo_oscuro">
+                </a>
+            </div>
+            <!-- Lista de enlaces del menú -->
+            <ul class="nav-list">
+                 <!-- Enlace a la página principal -->
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <!-- Enlace a la página "Sobre nosotros" -->
+                <li>
+                    <a href="nosotros.html">Sobre nosotros</a>
+                </li>
+                <!-- Enlace a la página de "Medicina estética" -->
+                <li>
+                    <a href="Medicina_estetica.html">Medicina estética</a>
+                </li>
+                 <!-- Enlace a la página de "Fisioterapia" -->
+                <li>
+                    <a href="fisioterapia.html">Fisioterapia</a>
+                </li>
+                <!-- Enlace a la página de "Nutrición" -->
+                <li>
+                    <a href="nutricion.html">Nutrición</a>
+                </li>
+                <!-- Enlace a la página de "Packs online" -->
+                <li>
+                    <a href="packs_online.html">Packs online</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+  
+
+<main>
+    <!-- Título principal de la sección que introduce la medicina estética -->
+  <section class="section_intro medicina">
+      <h2 class="titulo_h2 titulo_medicina">Medicina estética</h2>
+  </section>
+<!--Seccion de medicina estética
+    Descripción: Sección principal que describe varios tratamientos de medicina estética -->
+  <section class="section_medicina section_medicina_uno">
+    <!-- Sección de vitaminas faciales con imagen y descripción -->
+      <div class="foto_uno_med"></div>
+      <div class="contenido_vitaminas">
+          <h3 class="titulo_3">Vitaminas Faciales</h3>
+          <p class="texto_general">
+              Las vitaminas faciales son nutrientes esenciales que aplicamos en la piel del rostro, normalmente a través de productos como sueros o cremas, como el retinol, la vitamina C, vitamina E y la Niacinamida.
+          </p>
+      </div>
+      <!--Sección de rejuvenecimiento facial con imagen y descripción-->
+      <div class="foto_dos_med"></div>
+      <div class="contenido_rejuvenecimiento">
+          <h3 class="titulo_3">Rejuvenecimiento Facial</h3>
+          <p class="texto_general">
+               Trabajamos terapias con Láser, siendo la opción más popular entre los pacientes. Esto ayuda a reducir arrugas, manchas y cicatrices, dejando tu piel más uniforme.
+          </p>
+      </div>
+      <!-- Sección de masculinización facial con imagen y descripción -->
+      <div class="foto_tres_med"></div>
+      <div class="contenido_masculanizacion">
+          <h3 class="titulo_3">Masculanización Facial</h3>
+          <p class="texto_general">
+             En clínica Care incluimos tratamientos de masculinización facial no quirúrgicos, como rellenos para crear pómulos más definidos o inyecciones para mejorar el contorno de la mandíbula.
+          </p>
+      </div>
+      <!-- Sección de micropigmentación con imagen y descripción -->
+      <div class="foto_cuatro_med"></div>
+      <div class="contenido_micropigmentacion">
+          <h3 class="titulo_3">Micropigmentación</h3>
+          <p class="texto_general">
+              Conocido también como maquillaje permanente, esto mejora y modifica la apariencia de cejas, labios y el contorno de ojos, y también en la restauración de areolas en pacientes que han tenido una mastectomía o en la corrección de cicatrices.
+          </p>
+      </div>
+      <!-- Sección de ácido hialurónico con imagen y descripción -->
+      <div class="foto_cinco_med"></div>
+      <div class="contenido_acido">
+          <h3 class="titulo_3">Ácido Hialurónico</h3>
+          <p class="texto_general">
+              ¿Qué es y por qué es tan Popular? Es una sustancia fascinante que se encuentra de manera natural en nuestro cuerpo, especialmente en la piel. Ha ganado mucha popularidad por mejorar la piel sin necesidad de cirugía.
+          </p>
+      </div>
+  </section>
+
+   <!--Seccion de banner
+    Descripción: En esta sección mostramos el banner-->
+
+  <section class="container_seis_nos">
+    <!-- Contenedor con el mensaje y descripción -->
+      <div class="contenido_tres_nos">
+          <h2 class="titulo_2">Permítete un momento para ti</h2>
+          <p class="texto_general">
+              Estamos aquí para cuidar de ti con dedicación y esmero.
+              Nos encantará responder todas tus preguntas y asegurarnos de que tu experiencia con nosotros sea simplemente excepcional.
+          </p>
+      </div>
+  </section>
+</main>
+    
+ <!-- Contenedor principal del pie de página -->
+<footer>
+  <div class="footer_contenido">
+     <!-- Sección con el logo de la clínica -->
+      <div class="logo_clinica">
+        <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_oscuro" class="logo_footer">
+    </div>
+       <!-- Sección con la ubicación, horarios y teléfono de la clínica -->
+      <div class="ubicacion">
+          <div class="texto_ubicacion">
+              <p class="texto_general">Av. Marconi, 33, Cádiz</p>
+          </div>
+          <!-- Texto con los horarios de atención -->
+          <div class="horarios">
+              <p class="texto_general">Lunes-Viernes: 9:30-14 17:00-20:30</p>
+          </div>
+           <!-- Texto con el número de teléfono de contacto -->
+          <div class="telefono">
+              <p class="texto_general">651 33 22 19</p>
+          </div>
+      </div>
+      <!-- Sección con enlaces de interés -->
+      <div class="interes">
+        <p class="texto_general">
+            <a href="pagina_registro.html">¡Quiero una cita!</a>
+        </p>
+        <p class="texto_general">
+            <a href="packs_online.html">Ver bonos</a>
+        </p>
+    </div>
+  </div>
+  <!-- Línea separadora entre el contenido y el pie de página -->
+  <div class="linea"></div>
+</footer>
+     
+</body>
+</html>
+
+      
+      

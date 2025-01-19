@@ -1,0 +1,165 @@
+<!--
+   1. **Header (Encabezado)**:
+   
+
+2. **Main (Contenido Principal)**:
+   - **Formulario de registro de cliente**: Recoge información del cliente como nombre, apellidos, correo electrónico y teléfono. 
+   
+  - **Sección de banner principal**: Presenta un mensaje central con el título "Estamos para ayudarte" y un subtítulo "Nos ponemos en contacto  contigo".
+3. **Footer (Pie de página)**:
+  
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Care Página de registro</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <!-- Header: Contenedor de la barra de navegación -->
+    <header>
+      <!-- Botón hamburguesa para menú móvil -->
+      <button class="hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <!-- Menú de navegación -->
+      <nav id="menu">
+          <div class="container_logo">
+              <!-- Enlace al inicio del sitio, que contiene el logo -->
+              <a href="index.html">
+                  <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_claro" class="logo_oscuro">
+              </a>
+          </div>
+          <!-- Lista de enlaces del menú -->
+          <ul class="nav-list">
+              <!-- Enlace a la página principal -->
+              <li>
+                  <a href="index.html">Inicio</a>
+              </li>
+              <!-- Enlace a la página nosotros -->
+              <li>
+                  <a href="nosotros.html">Sobre nosotros</a>
+              </li>
+              <!-- Enlace a la página de medicina estetica -->
+              <li>
+                  <a href="Medicina_estetica.html">Medicina estética</a>
+              </li>
+              <!-- Enlace a la página fisioterapia -->
+              <li>
+                  <a href="fisioterapia.html">Fisioterapia</a>
+              </li>
+              <!-- Enlace a la página de nutricio-->
+              
+              <li>
+                  <a href="nutricion.html">Nutrición</a>
+              </li>
+              <!-- Enlace a la página pack online -->
+              <li>
+                  <a href="packs_online.html">Packs online</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+
+    
+      <main>
+        <!-- Sección del banner principal de la página, contiene su titulo y el mensaje central -->
+            <section class="section_banner">
+                <div class="contenido_banner">
+                    <h1 h1 class="titulo_1">Estamos para ayudarte</h1>
+                    <p class="texto_general">Nos ponemos en contacto contigo</p>
+                </div>
+            </section>
+            <!-- Sección del formulario de registro de cliente -->
+            <section class="formulario_registro">
+              <!-- Formulario que recoge la información del cliente -->
+                <form id="informacion_cliente">
+                    
+                  <!-- Campo para el nombre del cliente -->
+                    <div class="nombre">
+                        <label for="Nombre"></label>
+                        <!--El atributo required asegura que este campo debe de ser rellenado antes de enviar el formulario-->
+                        <input id="Nombre" name="Nombre" placeholder="Nombre" required>
+                    </div>
+
+                    <!-- Campo para los apellidos del cliente -->
+                    <div class="apellidos">
+                        <label for="Apellidos"></label>
+                        <input id="Apellidos" name="Apellidos" placeholder="Apellidos" required>
+                    </div>
+
+                    <!-- Campo para el correo electrónico del cliente -->
+                    <div class="email">
+                        <label for="Email"></label>
+                        <!-- input para el email -->
+                        <input id="Email" name="Email" type="email" placeholder="Email" required>
+                    </div>
+                    <!-- Campo para el teléfono del cliente -->
+                    <div>
+                          <label for="Telefono"></label>
+                          <!-- input para el telefono -->
+                          <input id="Telefono" name="Telefono" type="tel" placeholder="Teléfono" required>
+                    </div>
+
+                       <!-- Botón de envío del formulario -->
+                    <button type="submit" class="boton_enviar">Enviar</button>
+                    
+                </form>
+
+            
+ <section class="container_seis_nos">
+    <!-- Contenedor con el mensaje y descripción -->
+      <div class="contenido_tres_nos">
+          <h2 class="titulo_2">Permítete un momento para ti</h2>
+          <p class="texto_general">
+              Estamos aquí para cuidar de ti con dedicación y esmero.
+              Nos encantará responder todas tus preguntas y asegurarnos de que tu experiencia con nosotros sea simplemente excepcional.
+          </p>
+      </div>
+  </section>
+            
+            </main>
+            <!-- Contenedor principal del pie de página -->
+<footer>
+  <div class="footer_contenido">
+     <!-- Sección con el logo de la clínica -->
+      <div class="logo_clinica">
+        <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_oscuro" class="logo_footer">
+    </div>
+       <!-- Sección con la ubicación, horarios y teléfono de la clínica -->
+      <div class="ubicacion">
+          <div class="texto_ubicacion">
+              <p class="texto_general">Av. Marconi, 33, Cádiz</p>
+          </div>
+          <!-- Texto con los horarios de atención -->
+          <div class="horarios">
+              <p class="texto_general">Lunes-Viernes: 9:30-14 17:00-20:30</p>
+          </div>
+           <!-- Texto con el número de teléfono de contacto -->
+          <div class="telefono">
+              <p class="texto_general">651 33 22 19</p>
+          </div>
+      </div>
+      <!-- Sección con enlaces de interés -->
+      <div class="interes">
+        <p class="texto_general">
+            <a href="pagina_registro.html">¡Quiero una cita!</a>
+        </p>
+        <p class="texto_general">
+            <a href="packs_online.html">Ver bonos</a>
+        </p>
+    </div>
+  </div>
+  <!-- Línea separadora entre el contenido y el pie de página -->
+  <div class="linea"></div>
+</footer>
+   
+
+    
+</body>
+</html>

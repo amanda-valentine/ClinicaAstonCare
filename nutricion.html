@@ -1,0 +1,168 @@
+<!--
+Este archivo HTML contiene :
+
+1. **Header (Encabezado)**:
+   - Contiene el logo de la clínica y el menú de navegación.
+   - En dispositivos móviles, el menú se presenta como un "menú hamburguesa" que se puede desplegar.
+
+2. **Main (Contenido principal)**:
+   - Sección Nutrición: Muestra diversos servicios de nutrición acompañados de una descripción e imagen.
+   
+
+3. **Footer (Pie de página)**:
+   - Contiene información de contacto (dirección, horarios, teléfono).
+   - Incluye enlaces rápidos como "Hacer una cita" y "Ver bonos".
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Aston Care Nutricion</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+   <!-- Header: Contenedor de la barra de navegación -->
+    <header>
+        <!-- Botón hamburguesa para menú móvil -->
+        <button class="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Menú de navegación -->
+        <nav id="menu">
+            <div class="container_logo">
+                <!-- Enlace al inicio del sitio, que contiene el logo -->
+                <a href="index.html">
+                    <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_claro" class="logo_oscuro">
+                </a>
+            </div>
+            <!-- Lista de enlaces del menú -->
+            <ul class="nav-list">
+                <!-- Enlace a la página principal -->
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <!-- Enlace a la página nosotros -->
+                <li>
+                    <a href="nosotros.html">Sobre nosotros</a>
+                </li>
+                <!-- Enlace a la página de medicina estetica -->
+                <li>
+                    <a href="Medicina_estetica.html">Medicina estética</a>
+                </li>
+                <!-- Enlace a la página fisioterapia -->
+                <li>
+                    <a href="fisioterapia.html">Fisioterapia</a>
+                </li>
+                <!-- Enlace a la página de nutricio-->
+                
+                <li>
+                    <a href="nutricion.html">Nutrición</a>
+                </li>
+                <!-- Enlace a la página pack online -->
+                <li>
+                    <a href="packs_online.html">Packs online</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+<main>
+    <!-- Título principal de la sección que introduce la nutricion -->
+  <section class="section_intro nutricion">
+      <h2 class="titulo_h2">Nutrición</h2>
+  </section>  
+<!--Seccion de nutrición
+    Descripción: Sección principal que describe varios tratamientos de nutrición -->
+  <section class="section_nutricion section_nutricion_uno">
+    <!-- Sección de contenido consultas con imagen y descripción -->
+      <div class="img_uno_nut"></div>
+      <div class="contenido_consultas">
+          <h3 class="titulo_3">Nutrición Deportiva</h3>
+          <p class="texto_general">
+              Ofrecemos consultas personalizadas con un nutricionista especializado. Durante la primera cita, evaluamos tus hábitos alimentarios, estilo de vida y objetivos de salud. A partir de esta evaluación, diseñamos un plan de alimentación adaptado a tus necesidades específicas.
+          </p>
+      </div>
+      <!-- Sección de contenido nutricion deportiva con imagen y descripción -->
+      <div class="img_dos_nut"></div>
+      <div class="contenido_nutricion_depor">
+          <h3 class="titulo_3">Nutrición Deportiva</h3>
+          <p class="texto_general">
+              Si eres deportista o llevas un estilo de vida activo, nuestro equipo te proporcionará un plan de nutrición diseñado para optimizar tu rendimiento, mejorar la recuperación y mantenerte en tu mejor forma física. Cada plan está basado en tus objetivos deportivos y nivel de actividad.
+          </p>
+      </div>
+      <!-- Sección de contenido planes con imagen y descripción -->
+      <div class="img_tres_nut"></div>
+      <div class="contenido_planes">
+          <h3 class="titulo_3">Planes de alimentación</h3>
+          <p class="texto_general">
+              Ayudamos a los pacientes a lograr y mantener un peso saludable mediante planes nutricionales equilibrados, evitando las dietas extremas. Trabajamos en mejorar tus hábitos alimentarios, promoviendo cambios sostenibles para tu bienestar a largo plazo.
+          </p>
+      </div>
+      <div class="img_cinco_nut"></div>
+      <!-- Sección de contenido_recuperación con imagen y descripción -->
+      <div class="contenido_recuperacion">
+          <h3 class="titulo_3">Nutrición en recuperación</h3>
+          <p class="texto_general">
+              Ayudamos a los pacientes a lograr y mantener un peso saludable mediante planes nutricionales equilibrados, evitando las dietas extremas. Trabajamos en mejorar tus hábitos alimentarios, promoviendo cambios sostenibles para tu bienestar a largo plazo.
+          </p>
+      </div>
+  </section>
+
+  <section class="container_seis_nos">
+    <!-- Contenedor con el mensaje y descripción -->
+      <div class="contenido_tres_nos">
+          <h2 class="titulo_2">Permítete un momento para ti</h2>
+          <p class="texto_general">
+              Estamos aquí para cuidar de ti con dedicación y esmero.
+              Nos encantará responder todas tus preguntas y asegurarnos de que tu experiencia con nosotros sea simplemente excepcional.
+          </p>
+      </div>
+  </section>
+      
+  <footer>
+    <div class="footer_contenido">
+       <!-- Sección con el logo de la clínica -->
+        <div class="logo_clinica">
+          <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_oscuro" class="logo_footer">
+      </div>
+         <!-- Sección con la ubicación, horarios y teléfono de la clínica -->
+        <div class="ubicacion">
+            <div class="texto_ubicacion">
+                <p class="texto_general">Av. Marconi, 33, Cádiz</p>
+            </div>
+            <!-- Texto con los horarios de atención -->
+            <div class="horarios">
+                <p class="texto_general">Lunes-Viernes: 9:30-14 17:00-20:30</p>
+            </div>
+             <!-- Texto con el número de teléfono de contacto -->
+            <div class="telefono">
+                <p class="texto_general">651 33 22 19</p>
+            </div>
+        </div>
+        <!-- Sección con enlaces de interés -->
+        <div class="interes">
+          <p class="texto_general">
+              <a href="pagina_registro.html">¡Quiero una cita!</a>
+          </p>
+          <p class="texto_general">
+              <a href="packs_online.html">Ver bonos</a>
+          </p>
+      </div>
+    </div>
+    <!-- Línea separadora entre el contenido y el pie de página -->
+    <div class="linea"></div>
+  </footer>
+    
+</body>
+</html>
+
+     
+     

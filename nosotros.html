@@ -1,0 +1,211 @@
+<!--
+Este archivo HTML contiene :
+
+1. **Header (Encabezado)**:
+   - Contiene el logo de la clínica y el menú de navegación.
+   - En dispositivos móviles, el menú se presenta como un "menú hamburguesa" que se puede desplegar.
+
+2. **Main (Contenido principal)**:
+    - Mensaje inicial: Frases motivadoras sobre la importancia de la salud.
+    - Sección Medicina Estética: Enlace a la página de medicina estética.
+    - Sección Fisioterapia: Enlace a la página de fisioterapia.
+    - Sección Nutrición: Enlace a la página de nutrición.
+   - Introducción: Mensaje de bienvenida ("Confía en nosotros").
+    - Información principal: Enfoque y áreas clave de la clínica.
+    - Sobre nosotros: Descripción detallada de Aston Care.
+    - Beneficios: Razones para elegirnos (calidad, atención, precios).
+    - Banner: Mensaje motivador con logotipo.
+    - Sección final: Mensaje motivador y contacto.
+   
+
+3. **Footer (Pie de página)**:
+   - Contiene información de contacto (dirección, horarios, teléfono).
+   - Incluye enlaces rápidos como "Hacer una cita" y "Ver bonos".
+
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+  <!-- Header: Contenedor de la barra de navegación -->
+  <header>
+    <!-- Botón hamburguesa para menú móvil -->
+    <button class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- Menú de navegación -->
+    <nav id="menu">
+        <div class="container_logo">
+            <!-- Enlace al inicio del sitio, que contiene el logo -->
+            <a href="index.html">
+                <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_claro" class="logo_oscuro">
+            </a>
+        </div>
+        <!-- Lista de enlaces del menú -->
+        <ul class="nav-list">
+            <!-- Enlace a la página principal -->
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <!-- Enlace a la página nosotros -->
+            <li>
+                <a href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <!-- Enlace a la página de medicina estetica -->
+            <li>
+                <a href="Medicina_estetica.html">Medicina estética</a>
+            </li>
+            <!-- Enlace a la página fisioterapia -->
+            <li>
+                <a href="fisioterapia.html">Fisioterapia</a>
+            </li>
+            <!-- Enlace a la página de nutricio-->
+            
+            <li>
+                <a href="nutricion.html">Nutrición</a>
+            </li>
+            <!-- Enlace a la página pack online -->
+            <li>
+                <a href="packs_online.html">Packs online</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+     <!-- Sección de introducción -->
+  <section class="section_intro_nos">
+      <div class="nosotros">
+          <h1 class="titulo_1">Confía en nosotros</h1>
+          <p>Consúltanos sin compromiso</p>
+      </div>
+  </section>
+
+  <section class="container_uno">
+      <div class="container_uno_nos">
+          <div class="contenido_uno_nos">
+            <!-- Titlo de cabecera -->
+              <h2 class="titulo_2">Nos enorgullecemos de ofrecer un enfoque óptimo para tu salud y bienestar.</h2>
+              <!-- Cita -->
+              <p class="texto_general">
+                  Nuestra clínica fusiona tres áreas clave que, juntas, optimizan tu calidad de vida: nutrición, fisioterapia, y entrenamiento personalizado. Nuestro equipo de expertos trabaja en conjunto para brindarte un tratamiento único y adaptado a tus necesidades.
+              </p>
+          </div>
+      </div>
+  </section>
+<!-- Descripción página -->
+  <section class="container_dos_nos">
+    <!-- Información clinica -->
+      <div class="informacion_clinica">
+          <div class="texto_nosotros">
+              <h2 class="titulo_2">Sobre nosotros</h2>
+               <!-- Texto descriptivo sobre la clinica -->
+              <p class="texto_general">
+                  En Aston Care nos apasiona cuidar de ti. Somos una clínica integral especializada en medicina estética, nutrición y fisioterapia, con un enfoque personalizado que pone tu bienestar en el centro de todo lo que hacemos.
+                  Nuestro equipo de profesionales altamente cualificados trabaja con las últimas tecnologías y técnicas innovadoras para ofrecerte soluciones efectivas y seguras. Ya sea que busques potenciar tu belleza natural, mejorar tu salud a través de una alimentación equilibrada o recuperarte de lesiones y aliviar tensiones, en Aston Care estamos comprometidos a ayudarte a alcanzar tus objetivos.
+                  Creemos en la importancia de un enfoque holístico, combinando lo mejor de la ciencia y la salud para cuidar no solo de tu cuerpo, sino también de tu mente. Nuestra misión es que te sientas bien por dentro y por fuera, porque tu bienestar es nuestra prioridad.
+                  Aston Care: Donde salud, belleza y bienestar se encuentran.
+              </p>
+          </div>
+           <!-- Foto clínica-->
+          <div class="foto_clinica_uno"></div>
+      </div>
+  </section>
+
+  <section class="container_cuatro_nos">
+      <div class="imagen_intro_beneficios">
+          
+              <h2 class="titulo_2_1">¿Por qué elegirnos?</h2>
+          
+      </div>
+
+      <div class="frase_beneficio_uno">
+        <!-- Beneficio 1 -->
+          <div class="beneficio_uno"></div>
+          <h3 class="titulo_3">Calidad Garantizada</h3>
+          <p class="texto_general">Nos comprometemos a ofrecer productos y servicios de la más alta calidad, superando tus expectativas.</p>
+      </div>
+
+      <div class="frase_beneficio_dos">
+        <!-- Beneficio 2 -->
+          <div class="beneficio_dos"></div>
+          <h3 class="titulo_3">Atención Personalizada</h3>
+          <p class="texto_general">Nuestro equipo está siempre dispuesto a ayudarte, brindando un servicio al cliente excepcional y atención a cada detalle.</p>
+      </div>
+
+      <div class="frase_beneficio_tres">
+        <!-- Beneficio 2 -->
+          <div class="beneficio_tres"></div>
+          <h3 class="titulo_3">Precios Competitivos</h3>
+          <p class="texto_general">Ofrecemos precios justos y competitivos, asegurando que obtengas el mejor valor por tu inversión.</p>
+      </div>
+  </section>
+
+  <section class="container_cinco_nos">
+     <!-- Contenedor con el mensaje y descripción banner-->
+      <img src="img/LOGO.png" alt="logo_claro" class="logo_claro">
+      <div class="contenido_dos_nos">
+          <h2 class="titulo_2">Innovación y Pasión al Servicio de tu Bienestar</h2>
+          <p class="texto_general">
+            Nuestro equipo de especialistas, apasionado y altamente capacitado, te asesorará en cada paso para garantizar que alcances tus objetivos de salud, belleza y bienestar.
+          </p>
+      </div>
+  </section>
+
+  <section class="container_seis_nos">
+    <!-- Contenedor con el mensaje y descripción banner -->
+      <div class="contenido_tres_nos">
+          <h2 class="titulo_2">Permítete un momento para ti</h2>
+          <p class="texto_general">
+              Estamos aquí para cuidar de ti con dedicación y esmero.
+              Nos encantará responder todas tus preguntas y asegurarnos de que tu experiencia con nosotros sea simplemente excepcional.
+          </p>
+      </div>
+  </section>
+</main>
+
+
+<footer>
+    <div class="footer_contenido">
+       <!-- Sección con el logo de la clínica -->
+        <div class="logo_clinica">
+          <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_oscuro" class="logo_footer">
+      </div>
+         <!-- Sección con la ubicación, horarios y teléfono de la clínica -->
+        <div class="ubicacion">
+            <div class="texto_ubicacion">
+                <p class="texto_general">Av. Marconi, 33, Cádiz</p>
+            </div>
+            <!-- Texto con los horarios de atención -->
+            <div class="horarios">
+                <p class="texto_general">Lunes-Viernes: 9:30-14 17:00-20:30</p>
+            </div>
+             <!-- Texto con el número de teléfono de contacto -->
+            <div class="telefono">
+                <p class="texto_general">651 33 22 19</p>
+            </div>
+        </div>
+        <!-- Sección con enlaces de interés -->
+        <div class="interes">
+          <p class="texto_general">
+              <a href="pagina_registro.html">¡Quiero una cita!</a>
+          </p>
+          <p class="texto_general">
+              <a href="packs_online.html">Ver bonos</a>
+          </p>
+      </div>
+    </div>
+    <!-- Línea separadora entre el contenido y el pie de página -->
+    <div class="linea"></div>
+  </footer>
+
+</body>
+</html>

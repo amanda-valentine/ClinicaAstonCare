@@ -1,0 +1,166 @@
+<!--
+Este archivo HTML contiene :
+
+1. **Header (Encabezado)**:
+
+2. **Main (Contenido principal)**:
+   
+   - **Formulario de pago**: Un formulario para que los usuarios ingresen su información de tarjeta de crédito, con campos para el número de      tarjeta, fecha de expiración y CVC.
+   
+
+3. **Footer (Pie de página)**:
+   - Contiene información de contacto (dirección, horarios, teléfono).
+   - Incluye enlaces rápidos como "Hacer una cita" y "Ver bonos".
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Care Pasarela</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/index.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+</head>
+<body>
+  <!-- Header: Contenedor de la barra de navegación -->
+  <header>
+    <!-- Botón hamburguesa para menú móvil -->
+    <button class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- Menú de navegación -->
+    <nav id="menu">
+        <div class="container_logo">
+            <!-- Enlace al inicio del sitio, que contiene el logo -->
+            <a href="index.html">
+                <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_claro" class="logo_oscuro">
+            </a>
+        </div>
+        <!-- Lista de enlaces del menú -->
+        <ul class="nav-list">
+            <!-- Enlace a la página principal -->
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <!-- Enlace a la página nosotros -->
+            <li>
+                <a href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <!-- Enlace a la página de medicina estetica -->
+            <li>
+                <a href="Medicina_estetica.html">Medicina estética</a>
+            </li>
+            <!-- Enlace a la página fisioterapia -->
+            <li>
+                <a href="fisioterapia.html">Fisioterapia</a>
+            </li>
+            <!-- Enlace a la página de nutricio-->
+            
+            <li>
+                <a href="nutricion.html">Nutrición</a>
+            </li>
+            <!-- Enlace a la página pack online -->
+            <li>
+                <a href="packs_online.html">Packs online</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+      
+<main>
+
+    <!-- Div donde se aloja el contenido dinámico de los nombres de los productos -->
+    <section class="section_pack">
+        <div class="contenido_promocion"><h1 class="titulo_1">Tenemos promociones exclusivas esperandote</h1></div>
+    </section>
+
+    <section class="container-caja">
+        <!-- Div donde se aloja el contenido dinámico de los nombres de los productos -->
+        <div class="cesta_contenedor">
+          <h2 class="titulo_2">Tus bonos</h2>
+          <!-- Div con los nombres de los productos disponibles -->
+          <div class="cesta_productos"></div>
+        </div>
+      
+        <div class="pago">
+        <div class="pasarela_pago">
+              <h2 class="titulo_2">Total a pagar</h2>
+              <!-- Div con el importe total del pago -->
+        <div id="total">Total: 0€</div>
+      </div>
+        
+        <div class="pasarela_gmail">
+              <p class="texto_general">Por favor ingrese su email para poder continuar con la compra</p>
+         <!-- Sección del formulario de pago -->
+              <form id="email_compra">
+                <div class="email">
+                    <!-- Campo de email -->
+                    <label for="Email"></label>
+                    <!-- Input de email -->
+                    <input id="Email" name="Email" type="email"  placeholder="email" required>
+                </div>
+                <!-- botoón que dirige a la página de pago -->
+                <button type="submit" class="boton_continuar">Continuar</button>
+            </form>
+        </div>
+        </div>
+
+      </section>
+
+      <section class="container_seis_nos">
+         <!-- Contenedor con el mensaje y descripción -->
+        <div class="contenido_tres_nos">
+          <h2 class="titulo_2">Permítete un momento para ti</h2>
+          <p>Estamos aquí para cuidar de ti con dedicación y esmero.
+      
+            Nos encantará responder todas tus preguntas y asegurarnos de que tu experiencia con nosotros sea simplemente excepcional.</p>
+        </div>
+      </section>
+        
+        
+
+</main>
+
+<!-- Contenedor principal del pie de página -->
+<footer>
+  <div class="footer_contenido">
+     <!-- Sección con el logo de la clínica -->
+      <div class="logo_clinica">
+        <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_oscuro" class="logo_footer">
+    </div>
+       <!-- Sección con la ubicación, horarios y teléfono de la clínica -->
+      <div class="ubicacion">
+          <div class="texto_ubicacion">
+              <p class="texto_general">Av. Marconi, 33, Cádiz</p>
+          </div>
+          <!-- Texto con los horarios de atención -->
+          <div class="horarios">
+              <p class="texto_general">Lunes-Viernes: 9:30-14 17:00-20:30</p>
+          </div>
+           <!-- Texto con el número de teléfono de contacto -->
+          <div class="telefono">
+              <p class="texto_general">651 33 22 19</p>
+          </div>
+      </div>
+      <!-- Sección con enlaces de interés -->
+      <div class="interes">
+        <p class="texto_general">
+            <a href="pagina_registro.html">¡Quiero una cita!</a>
+        </p>
+        <p class="texto_general">
+            <a href="packs_online.html">Ver bonos</a>
+        </p>
+    </div>
+  </div>
+  <!-- Línea separadora entre el contenido y el pie de página -->
+  <div class="linea"></div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+ <!-- El HTML está estructurado para mostrar los detalles de un servicio específico y su imagen de manera dinámica.
+    
+    La página se compone de los siguientes elementos clave:
+    
+        1. **Contenedor Principal (container)**:
+            - El contenedor principal alberga todo el contenido de la página.
+        
+        2. **Detalle del Producto (product-detail)**:
+            - El `div` con ID `product-detail` es donde se cargan los detalles del servicio (nombre, imagen y descripción).
+            - Estos datos son insertados dinámicamente mediante JavaScript en el archivo `detalle.js`.
+            3. **Footer (Pie de página)**:
+            - Contiene información de contacto (dirección, horarios, teléfono).
+            - Incluye enlaces rápidos como "Hacer una cita" y "Ver bonos".-->
+        
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Producto</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/pack_online.js" defer></script>
+  <script src="js/detalle.js" defer></script>
+  
+</head>
+<body>
+
+  <!-- 
+      Contenedor para el detalle del servicio. Este será llenado dinámicamente con información sobre el servicio.
+      Los datos pueden ser controlados mediante JavaScript.
+    -->
+  <div class="container">
+
+    <!-- Aquí se cargará el título, imagen y descripción del servicio con JavaScript -->
+    <div id="producto-detalle" class="producto-detalle"></div>
+  </div>
+  
+</body>
+</html>

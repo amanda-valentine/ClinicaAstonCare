@@ -1,0 +1,194 @@
+<!--
+Este archivo HTML contiene :
+
+1. **Header (Encabezado)**:
+
+2. **Main (Contenido principal)**:
+   - **Sección de promociones**: Un mensaje destacando promociones exclusivas.
+   - **Formulario de pago**: Un formulario para que los usuarios ingresen su información de tarjeta de crédito, con campos para el número de      tarjeta, fecha de expiración y CVC.
+   - **Ventana emergente**: Muestra un mensaje de confirmación cuando el pago se ha recibido correctamente.
+
+3. **Footer (Pie de página)**:
+   - Contiene información de contacto (dirección, horarios, teléfono).
+   - Incluye enlaces rápidos como "Hacer una cita" y "Ver bonos".
+
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Care Pago</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/index.js" defer></script>
+    <script src="js/pago.js" defer></script>
+    
+</head>
+<body>
+    
+  <!-- Header: Contenedor de la barra de navegación -->
+  <header>
+    <!-- Botón hamburguesa para menú móvil -->
+    <button class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- Menú de navegación -->
+    <nav id="menu">
+        <div class="container_logo">
+            <!-- Enlace al inicio del sitio, que contiene el logo -->
+            <a href="index.html">
+                <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_claro" class="logo_oscuro">
+            </a>
+        </div>
+        <!-- Lista de enlaces del menú -->
+        <ul class="nav-list">
+            <!-- Enlace a la página principal -->
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <!-- Enlace a la página nosotros -->
+            <li>
+                <a href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <!-- Enlace a la página de medicina estetica -->
+            <li>
+                <a href="Medicina_estetica.html">Medicina estética</a>
+            </li>
+            <!-- Enlace a la página fisioterapia -->
+            <li>
+                <a href="fisioterapia.html">Fisioterapia</a>
+            </li>
+            <!-- Enlace a la página de nutricio-->
+            
+            <li>
+                <a href="nutricion.html">Nutrición</a>
+            </li>
+            <!-- Enlace a la página pack online -->
+            <li>
+                <a href="packs_online.html">Packs online</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+      <main>
+        <section class="section_pack">
+            <div class="contenido_promocion"><h1 class="titulo_1">Tenemos promociones exclusivas esperandote</h1></div>
+        </section>
+         <!-- Sección del formulario de pago -->
+    <section class="container_formulario_pago">
+        <section class="pasarela_de_pago">
+          
+          <h2 class="titulo_2">Formulario de Pago</h2>
+          <form id="pago-cliente">
+             <!-- Campo de número de tarjeta -->
+            <label for="numero-tarjeta"></label>
+            <!-- 
+                Campo de entrada para el número de tarjeta. 
+                El atributo "pattern" asegura que solo se ingresen 16 dígitos numéricos.
+              -->
+            <input type="text" id="numero-tarjeta" placeholder="Número de tarjeta" maxlength="16" pattern="\d{16}" required>
+
+            <!-- Campo de expiración de la tarjeta -->
+            <label for="dato-expiracion"></label>
+            <!-- 
+            Campo para ingresar el número de tarjeta. 
+            El atributo "maxlength" asegura que el campo no pueda contener más de 16 caracteres.
+            En este caso "pattern='\d{2}/\d{2}'" asegura que el formato sea dos dígitos para el mes,
+            seguidos de una barra, y luego dos dígitos para el año
+          -->
+            <input type="text" id="dato-expiracion" placeholder="MM/AA" maxlength="5" pattern="\d{2}/\d{2}" required>
+
+             <!-- Campo CVC -->
+            <label for="cvc"></label>
+            <input type="text" id="cvc" placeholder="CVC" maxlength="3" pattern="\d{3}" required>
+
+            <!-- 
+            Botón para enviar el formulario de pago. 
+            Cuando el usuario hace clic, se envían los datos del formulario al servidor.
+          -->
+            <button class="aceptar" type="submit">Aceptar Pago</button>
+            
+          </form>
+        </section>
+    </section>
+
+          <!-- 
+            Contenedor principal de la ventana emergente.
+            
+            
+          -->
+          <div class="container_emergente">
+
+             <!-- 
+            Esta ventana aparece cuando se ha hecho la compra correctamente, se controla mediante Javascript.
+          -->
+            <div class="ventana_emergente">
+              <!-- 
+              Botón para cerrar la ventana emergente.
+            -->
+              <button class="cierre_ventana_emergente">x</button>
+                <!-- 
+              Texto de la ventana emergente.
+            -->
+              <p class="texto_general">Hemos recibido correctamente tu pedido.<p> 
+              <p class="texto_general">¡Gracias por confiar en nosotros! </p>
+              <p class="texto_general">Recuerda revisar la bandeja de spam</p>
+            </div> 
+          </div>
+
+        
+          <section class="container_seis_nos">
+            <!-- Contenedor con el mensaje y descripción -->
+           <div class="contenido_tres_nos">
+             <h2 class="titulo_2">Permítete un momento para ti</h2>
+             <p>Estamos aquí para cuidar de ti con dedicación y esmero.
+         
+               Nos encantará responder todas tus preguntas y asegurarnos de que tu experiencia con nosotros sea simplemente excepcional.</p>
+           </div>
+         </section>
+       
+
+       
+
+       
+        </main>
+<!-- Contenedor principal del pie de página -->
+<footer>
+  <div class="footer_contenido">
+     <!-- Sección con el logo de la clínica -->
+      <div class="logo_clinica">
+        <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_oscuro" class="logo_footer">
+    </div>
+       <!-- Sección con la ubicación, horarios y teléfono de la clínica -->
+      <div class="ubicacion">
+          <div class="texto_ubicacion">
+              <p class="texto_general">Av. Marconi, 33, Cádiz</p>
+          </div>
+          <!-- Texto con los horarios de atención -->
+          <div class="horarios">
+              <p class="texto_general">Lunes-Viernes: 9:30-14 17:00-20:30</p>
+          </div>
+           <!-- Texto con el número de teléfono de contacto -->
+          <div class="telefono">
+              <p class="texto_general">651 33 22 19</p>
+          </div>
+      </div>
+      <!-- Sección con enlaces de interés -->
+      <div class="interes">
+        <p class="texto_general">
+            <a href="pagina_registro.html">¡Quiero una cita!</a>
+        </p>
+        <p class="texto_general">
+            <a href="packs_online.html">Ver bonos</a>
+        </p>
+    </div>
+  </div>
+  <!-- Línea separadora entre el contenido y el pie de página -->
+  <div class="linea"></div>
+</footer>
+       
+</body>
+</html>

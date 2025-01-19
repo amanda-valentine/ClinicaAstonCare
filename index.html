@@ -1,0 +1,85 @@
+<!--
+Este archivo HTML contiene :
+
+1. **Header (Encabezado)**:
+   - Contiene el logo de la clínica y el menú de navegación.
+   - En dispositivos móviles, el menú se presenta como un "menú hamburguesa" que se puede desplegar.
+
+2. **Main (Contenido principal)**:
+   - Sección Inicio: Muestra textos de motivación.
+   
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Aston Care</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+  <!-- Header: Contenedor de la barra de navegación -->
+  <header>
+    <!-- Botón hamburguesa para menú móvil -->
+    <button class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- Menú de navegación -->
+    <nav id="menu">
+        <div class="container_logo">
+            <!-- Enlace al inicio del sitio, que contiene el logo -->
+            <a href="index.html">
+                <!-- Enlace a la página principal -->
+                <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_claro" class="logo_oscuro">
+            </a>
+        </div>
+        <!-- Lista de enlaces del menú -->
+        <ul class="nav-list">
+            <!-- Enlace a la página principal -->
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <!-- Enlace a la página nosotros -->
+            <li>
+                <a href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <!-- Enlace a la página de medicina estetica -->
+            <li>
+                <a href="Medicina_estetica.html">Medicina estética</a>
+            </li>
+            <!-- Enlace a la página fisioterapia -->
+            <li>
+                <a href="fisioterapia.html">Fisioterapia</a>
+            </li>
+            <!-- Enlace a la página de nutricio-->
+            
+            <li>
+                <a href="nutricion.html">Nutrición</a>
+            </li>
+            <!-- Enlace a la página pack online -->
+            <li>
+                <a href="packs_online.html">Packs online</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+  <main>
+    
+    <div id="container">
+        <!-- Sección con frases -->
+        <section class="inicio_index">
+            <!-- Titulo de frases motivacionales -->
+            <div><h2>Porque para nosotros tu salud es lo más importante</h2></div>
+            <div><h2>Porque creemos que los servicios de salud deben ser accesibles para todo el mundo</h2></div>
+            <div><h2>Porque tu salud no puede esperar</h2></div>
+        </section>
+
+</main>
+</body>
+</html>

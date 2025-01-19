@@ -1,0 +1,195 @@
+<!--
+Este archivo HTML contiene :
+
+1. **Header (Encabezado)**:
+   - Contiene el logo de la clínica y el menú de navegación.
+   - En dispositivos móviles, el menú se presenta como un "menú hamburguesa" que se puede desplegar.
+
+2. **Main (Contenido principal)**:
+   - Sección "Promociones exclusivas": Muestra un título promocional.
+   - Sección "Carrito de compras": Incluye un enlace para ver el carrito y una imagen representativa.
+   - Sección "Productos destacados": Muestra bonos o servicios destacados con una galería deslizable.
+   - Sección "Permítete un momento para ti": Texto descriptivo relacionado con los servicios ofrecidos.
+
+3. **Footer (Pie de página)**:
+   - Contiene información de contacto (dirección, horarios, teléfono).
+   - Incluye enlaces rápidos como "Hacer una cita" y "Ver bonos".
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Aston Care Pack online</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/index.js" defer></script>
+    <script src="js/pack_online.js" defer></script>
+    
+    
+    
+</head>
+<body>
+  <!-- Header: Contenedor de la barra de navegación -->
+  <header>
+    <!-- Botón hamburguesa para menú móvil -->
+    <button class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- Menú de navegación -->
+    <nav id="menu">
+        <div class="container_logo">
+            <!-- Enlace al inicio del sitio, que contiene el logo -->
+            <a href="index.html">
+                <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_claro" class="logo_oscuro">
+            </a>
+        </div>
+        <!-- Lista de enlaces del menú -->
+        <ul class="nav-list">
+            <!-- Enlace a la página principal -->
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <!-- Enlace a la página nosotros -->
+            <li>
+                <a href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <!-- Enlace a la página de medicina estetica -->
+            <li>
+                <a href="Medicina_estetica.html">Medicina estética</a>
+            </li>
+            <!-- Enlace a la página fisioterapia -->
+            <li>
+                <a href="fisioterapia.html">Fisioterapia</a>
+            </li>
+            <!-- Enlace a la página de nutricio-->
+            
+            <li>
+                <a href="nutricion.html">Nutrición</a>
+            </li>
+            <!-- Enlace a la página pack online -->
+            <li>
+                <a href="packs_online.html">Packs online</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    
+
+
+<main>
+    <!--En esa seccion se muestra un background y el respectivo titulo de la página-->
+    <section class="section_pack">
+        <div class="contenido_promocion">
+            <h1 class="titulo_pack">Tenemos promociones exclusivas esperándote</h1>
+        </div>
+    </section>
+<!-- Sección que muestra un enlace para visualizar el carrito de compras -->
+    <section class="ver_carrito">
+        <div class="carrito">
+            <!-- Enlace para redirigir a la página de pasarela de pago -->
+            <p><a class="pasarela" href="">Ver carrito</a></p>
+        </div>
+        <!-- Imagen que representa el carrito de compras/cesta -->
+        <img src="img/pack_img14.png" class="img_carrito" alt="Imagen del paquete 14">
+    </section>
+
+<!-- Div contenedor donde se mostrarán los productos generados dinámicamente con JavaScript -->
+    <div id="catalogo_productos" class="centrar catalogo_productos"></div>
+
+    <!-- Sección de productos destacados
+     Descripción: En esta sección se mostrarán los productos destacados -->
+    <section class="productos_destacados">
+        
+        
+            <h2>Bonos más destacados</h2>
+       
+        <!-- Galeria de los productos, se mostrarán tanto las imagenes y las frases de los respectivos servicios-->
+        <div class="galeria_productos_destacados">
+            <!-- Botón para navegar hacia el producto anterior -->
+            <button class="anterior">&lt;</button>
+
+            <!-- Botón para navegar hacia el siguiente producto -->
+            <button class="siguiente">&gt;</button>
+
+            <!-- Descripción del primer bono -->
+            <div class="texto_productos_destacados">
+                <h2 class="titulo_2">Bono 5 sesiones exclusivo para ATM</h2>
+                <p class="texto_general">
+                    Ya sea que sufras de dolor en la mandíbula, ruidos articulares o dificultad para masticar,
+                    este bono te brindará el acceso a expertos que evaluarán y tratarán tus necesidades específicas.
+                    ¡Recupera el confort y la movilidad de tu mandíbula con nuestro tratamiento personalizado!
+                </p>
+            </div>
+            <!-- Descripción del segundo bono -->
+            <div class="texto_productos_destacados">
+                <h2 class="titulo_2">Bono 2 sesiones en toxina butolínica</h2>
+                <p class="texto_general">
+                    Ya sea para tratar líneas de expresión, arrugas o mejorar el contorno facial,
+                    nuestras sesiones personalizadas te ayudarán a lograr un aspecto más relajado y rejuvenecido.
+                    ¡No pierdas esta oportunidad de lucir mejor y sentirte increíble!
+                </p>
+            </div>
+            <!-- Descripción del tercer bono -->
+            <div class="texto_productos_destacados">
+                <h2 class="titulo_2">Bono 3 sesiones en masculinización facial</h2>
+                <p class="texto_general">
+                    Con una técnica personalizada, lograremos mejorar tu perfil y realzar tus rasgos de manera natural.
+                    No pierdas esta oportunidad única de mejorar tu apariencia y ganar confianza en ti mismo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container_seis_nos">
+        <!-- Contenedor con el mensaje y descripción -->
+          <div class="contenido_tres_nos">
+              <h2 class="titulo_2">Permítete un momento para ti</h2>
+              <p class="texto_general">
+                  Estamos aquí para cuidar de ti con dedicación y esmero.
+                  Nos encantará responder todas tus preguntas y asegurarnos de que tu experiencia con nosotros sea simplemente excepcional.
+              </p>
+          </div>
+      </section>
+</main>
+
+<!-- Contenedor principal del pie de página -->
+<footer>
+    <div class="footer_contenido">
+       <!-- Sección con el logo de la clínica -->
+        <div class="logo_clinica">
+          <img src="img/LOGO_ASTON_CARE_oscuro.png" alt="logo_oscuro" class="logo_footer">
+      </div>
+         <!-- Sección con la ubicación, horarios y teléfono de la clínica -->
+        <div class="ubicacion">
+            <div class="texto_ubicacion">
+                <p class="texto_general">Av. Marconi, 33, Cádiz</p>
+            </div>
+            <!-- Texto con los horarios de atención -->
+            <div class="horarios">
+                <p class="texto_general">Lunes-Viernes: 9:30-14 17:00-20:30</p>
+            </div>
+             <!-- Texto con el número de teléfono de contacto -->
+            <div class="telefono">
+                <p class="texto_general">651 33 22 19</p>
+            </div>
+        </div>
+        <!-- Sección con enlaces de interés -->
+        <div class="interes">
+          <p class="texto_general">
+              <a href="pagina_registro.html">¡Quiero una cita!</a>
+          </p>
+          <p class="texto_general">
+              <a href="packs_online.html">Ver bonos</a>
+          </p>
+      </div>
+    </div>
+    <!-- Línea separadora entre el contenido y el pie de página -->
+    <div class="linea"></div>
+  </footer>
+
+</body>
+</html>
